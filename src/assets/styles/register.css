@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    height: auto;
+}
+
+body {
+    padding-top: 60px;
+    background-image: url('../../assets/imgs/background.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    font-family: Arial, sans-serif;
+}
+
+/* Centrado horizontal */
+.login-container {
+    max-width: 425px;
+    width: 375px;
+    margin: 100px auto; /* Separación arriba y centrado horizontal */
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.login-input {
+    height: 48px;
+    padding: 12px 14px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.login-button {
+    padding: 10px;
+    font-size: 19px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.login-switch-auth {
+    text-align: center;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.login-switch-auth:hover {
+    color: #0056b3;
+}
