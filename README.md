@@ -1,12 +1,29 @@
-# React + Vite
+## 🚨 ADVERTENCIA IMPORTANTE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚠️ **IMPORTANTE:** Antes de ejecutar el proyecto, **debes importar los DAOs desde la carpeta `config/data`**.  
+Esta carpeta contiene configuraciones necesarias con datos por defecto que permiten que el sistema funcione correctamente al iniciar.  
+Si no los importas, es posible que obtengas errores por falta de datos o configuraciones iniciales.
+Se encuentra en el repositorio de Api_Blog
+---
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Credenciales de prueba
 
-## Expanding the ESLint configuration
+Puedes usar las siguientes credenciales para probar la autenticación:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Admin:
+- **Correo:** javierherrera5513@gmail.com  
+- **Contraseña:** Dispositibo1@
+
+### Usuario estándar:
+- **Correo:** rodrigoherrera@gmail.com  
+- **Contraseña:** Pass123@
+
+---
+
+## ▶️ Cómo iniciar el proyecto
+
+```bash
+npm i
+npm run dev
+
