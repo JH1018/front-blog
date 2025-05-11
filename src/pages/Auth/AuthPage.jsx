@@ -10,9 +10,9 @@ export const AuthPage = () => {
     return (
         <div>
             {isLogin?(
-                <Login switchAuthHandler={handleAuthPageToggle}/>
-            ): (
                 <Register switchAuthHandler={handleAuthPageToggle}/>
+            ): (
+                <Login switchAuthHandler={handleAuthPageToggle}/>
             )}
         </div>
     )

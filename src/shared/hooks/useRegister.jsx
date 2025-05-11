@@ -23,7 +23,7 @@ export const useRegister = () => {
             toast.success(response.data.message || "Cuenta creada con éxito");
             const { userDetails } = response.data;
             localStorage.setItem("user", JSON.stringify(userDetails));
-            navigate('/');
+            navigate('/home');
         } else {
             toast.error(response?.e?.response?.data || 'Error al registrar la cuenta');
         }

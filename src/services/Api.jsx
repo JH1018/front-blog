@@ -21,22 +21,77 @@ apiClient.interceptors.request.use(
     }
 )
 
-export const login = async(data) =>{
-    try{
+export const login = async (data) => {
+    try {
         return await apiClient.post("/auth/login", data)
-    }catch(e){
-        return{
+    } catch (e) {
+        return {
             error: true,
             e: e
         }
     }
 }
 
-export const register = async(data) =>{
-    try{
+export const register = async (data) => {
+    try {
         return await apiClient.post("/auth/register", data)
-    }catch(e){
-        return{
+    } catch (e) {
+        return {
+            error: true,
+            e: e
+        }
+    }
+}
+
+export const publish = async (data) => {
+    try {
+        return await apiClient.post("/publication/registerPublication/", data)
+    } catch (e) {
+        return {
+            error: true,
+            e: e
+        }
+    }
+}
+
+export const getCategory = async () => {
+    try {
+        return await apiClient.get("/category/getCategory")
+    } catch (e) {
+        return {
+            error: true,
+            e: e
+        }
+    }
+}
+
+export const getPublication = async () => {
+    try {
+        return await apiClient.get("/publication/getPublication/")
+    } catch (e) {
+        return {
+            error: true,
+            e: e
+        }
+    }
+}
+
+export const getPublicationDetalle = async (id) => {
+    try {
+        return await apiClient.get(`/publication/getPublication/${id}`)
+    } catch (e) {
+        return {
+            error: true,
+            e: e
+        }
+    }
+}
+
+export const comment = async (data) => {
+    try {
+        return await apiClient.post(`/comment/addComment/`, data)
+    } catch (e) {
+        return {
             error: true,
             e: e
         }

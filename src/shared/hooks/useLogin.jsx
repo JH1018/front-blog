@@ -18,7 +18,7 @@ export const useLogin = () =>{
         const { userDetails } = response.data
 
         localStorage.setItem('user', JSON.stringify(userDetails))
-        navigate("/")
+        navigate("/home")
     };
     return{ login, isloading}
 };

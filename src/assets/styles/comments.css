@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container{
+    margin-top: 80px;
+}
+.publication-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-height: auto;
+    margin-top: 80px;
+}
+
+
+.publication-form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.form-label {
+    font-size: 18px;
+    margin: 1rem 0 0.5rem;
+    display: block;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    margin-bottom: 10px;
+    transform: translate(0,-150%);
+}
+.publish-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.publish-button:hover {
+    background-color: #0056b3;
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+
+.button-add-comment {
+    right: 10%; 
+    margin-top: 25px; 
+    margin-bottom: 0;    
+    z-index: 100;      
+}
+
+.publication-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px; 
+    transform: none; 
+}
+
+.publication-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.publication-item:hover {
+    transform: translateY(-5px);
+}
+
+.publication-title {
+    font-size: 32px; 
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.publication-content {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.comment-button {
+    align-self: flex-start;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-button:hover {
+    background-color: #0056b3;
+}
+
+.no-publications {
+    text-align: center;
+    font-size: 18px;
+    color: #888;
+}
+
+.publication-detail-container {
+    width: 600px;
+    max-width: 900px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+}
+
+.publication-header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.publication-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.publication-category {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: 600;
+}
+
+.publication-content {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.comments-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section h3 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.comments-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.comments-section ul li {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comments-section ul li p {
+    font-size: 16px;
+    color: #555;
+}
+
+.comments-section p {
+    font-style: italic;
+    color: #888;
+}
+
+.category-filter{
+    transform: translate(0, -200%);
+    width: 10%;
+}

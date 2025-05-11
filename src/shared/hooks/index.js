@@ -1,2 +1,6 @@
 export { useLogin } from "./useLogin"
 export {useRegister} from "./useRegister"
+export {useRegisterPublication} from "./useRegisterPublication"
+export {useGetPublications} from "./useGetPublications"
+export {useGetPublicationById} from "./useGetPublicationById"
+export {useComment} from "./useComment"
